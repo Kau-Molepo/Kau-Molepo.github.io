@@ -161,4 +161,20 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
     window.addEventListener('scroll', highlightNavItem);
+
+    const nav = document.querySelector('nav');
+    const navItems = nav.querySelectorAll('ul li');
+
+    nav.addEventListener('mouseenter', () => {
+        navItems.forEach(item => {
+            item.style.transition = 'transform 0.3s ease';
+            item.style.transform = 'translateY(-2px)'; // Slight upward motion
+        });
+    });
+
+    nav.addEventListener('mouseleave', () => {
+        navItems.forEach(item => {
+            item.style.transform = 'translateY(0)'; // Reset position
+        });
+    });
 });
