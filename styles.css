@@ -76,6 +76,7 @@ header h1 {
     font-size: 5rem;
     margin-bottom: 1rem;
     background: linear-gradient(45deg, var(--primary-color), var(--secondary-color), var(--accent-color));
+    background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     animation: gradientText 5s ease infinite;
@@ -286,6 +287,74 @@ section {
 
 .skills-list strong {
     color: var(--secondary-color);
+}
+
+/* Style for Education Items */
+.degree {
+    background: var(--card-bg);
+    padding: 30px;
+    margin-bottom: 40px;
+    border-radius: 15px;
+    transition: transform 0.3s ease;
+}
+
+.degree:hover {
+    transform: translateY(-5px);
+}
+
+.certifications {
+    margin-top: 40px;
+}
+
+.certifications ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.certifications li {
+    margin-bottom: 15px;
+    padding: 10px;
+    background: var(--card-bg);
+    border-radius: 8px;
+}
+
+/* Style for Experience Items */
+.experience-item {
+    background: var(--card-bg);
+    padding: 30px;
+    margin-bottom: 40px;
+    border-radius: 15px;
+    transition: transform 0.3s ease;
+}
+
+.experience-item:hover {
+    transform: translateY(-5px);
+}
+
+.experience-subtitle {
+    color: var(--accent-color);
+    margin-bottom: 10px;
+}
+
+.experience-company {
+    font-weight: bold;
+    color: var(--secondary-color);
+    margin-bottom: 5px;
+}
+
+.experience-duration {
+    font-style: italic;
+    margin-bottom: 15px;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.experience-details {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+.experience-details li {
+    margin-bottom: 8px;
 }
 
 /* Responsive design for skills section */
